@@ -283,6 +283,13 @@ class Liste:
     def SupTete(self):
         """
         cette function permet supprime l'élémént en tête de la liste.
+        >>> `l1 = Liste()` 
+        >>> `l1 = AjoutTete(1)` 
+        >>> `l1 = AjoutFin(2)` 
+        >>> `l1 = AjoutFin(5)` 
+        >>> `l1 = AjoutFin(2)` 
+        >>> `l1.SupTete()`\n
+        # Affiche: 1 ->2-> 5 -> 2-> None
         """
 
         if self.tete is None:
@@ -296,13 +303,13 @@ class Liste:
     # Supprimer l'élément à la fin de la liste 
     def SupFin(self):
         """
-        Retire la dernière cellule de la liste chaînée.\n
-        Mode d'usage:\n
-        >>> `l1 = Liste()` \n
-        >>> `l1 = AjoutTete(1)` \n
-        >>> `l1 = AjoutFin(2)` \n
-        >>> `l1 = AjoutFin(5)` \n
-        >>> `l1 = AjoutFin(2)` \n
+        Retire la dernière cellule de la liste chaînée.
+        : Mode d'usage:
+        >>> `l1 = Liste()` 
+        >>> `l1 = AjoutTete(1)` 
+        >>> `l1 = AjoutFin(2)` 
+        >>> `l1 = AjoutFin(5)` 
+        >>> `l1 = AjoutFin(2)` 
         >>> `l1.SupFin()`\n
         # Affiche: 1 -> 2 -> 5 -> None
         """
